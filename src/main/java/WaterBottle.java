@@ -9,4 +9,8 @@ public class WaterBottle {
         return this.volume;
     }
 
+    public int sub(){
+        return this.volume - 10;
+    }
+
 }
