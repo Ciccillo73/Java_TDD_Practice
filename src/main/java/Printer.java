@@ -34,6 +34,14 @@ public class Printer {
         this.setToner(tonerAfter);
     }
 
+    public boolean ifEnoughPaper(int totalPagesToPrint){
+        if(this.getSheets() >= totalPagesToPrint){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
 
 
 }

@@ -39,12 +39,19 @@ public class TestPrinter {
         assertEquals(50, printer.getSheets());
         assertEquals(50, printer.getToner());
     }
+
+    @Test
+
+    public void thereIsEnoughPaper(){
+        assertEquals(true, printer.ifEnoughPaper(30));
+    }
+
 }
 
 
-//    Add a method to print that takes in a number of pages and number of copies.
-//        The print method will only run if the printer has enough paper.
+//
+//       The print method will only run if the printer has enough paper:
 //        If it runs it will reduce the value of the paper left
 //        by number of copies * number of pages.
-//        Add a toner volume property to the class.
-//        Modify the printer so that it reduces the toner by 1 for each page printed.
+//
+//
