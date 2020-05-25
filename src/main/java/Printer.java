@@ -1,24 +1,28 @@
 public class Printer {
 
-    private int sheetsLeft;
+    private int sheets;
     private int toner;
 
     public Printer(int sheetsLeft, int toner) {
-        this.sheetsLeft = sheetsLeft;
+        this.sheets = sheets;
         this.toner = toner;
     }
-    public int getSheetsLeft(){
-        return this.sheetsLeft;
+    public int getSheets(){
+        return this.sheets;
     }
 
     public int getToner(){
         return this.toner;
     }
 
-    public void setSheetsLeft(int newToner){
-        this.toner = newToner;
+    public void setSheets(int newSheets){
+        this.sheets = newSheets;
     }
 
+
+    public void setToner(int newToner){
+        this.toner = newToner;
+    }
 
 
 }
