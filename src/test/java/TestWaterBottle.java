@@ -24,11 +24,15 @@ public class TestWaterBottle {
     }
 
     @Test
-    public void setToEmpty(){
-        assertEquals(0, waterBottle.setEmpty());
+    public void Empty(){
+        waterBottle.empty();
+        assertEquals(0, waterBottle.getVolume());
     }
 
     @Test
-    public void setFull(){}
+    public void setFull(){
+        waterBottle.full();
+        assertEquals(100, waterBottle.getVolume());
+    }
 
 }

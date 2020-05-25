@@ -19,8 +19,12 @@ public class WaterBottle {
         this.setVolume(afterDrink);
     }
 
-    public int setEmpty(){
-        return this.volume = 0;
+    public void empty(){
+        this.setVolume(0);
+    }
+
+    public void full(){
+        this.setVolume(100);
     }
 
 }
