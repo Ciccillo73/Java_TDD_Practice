@@ -18,13 +18,17 @@ public class TestWaterBottle {
     }
 
     @Test
-    public void sub(){
-        assertEquals(90, waterBottle.sub());
+    public void isVolumeDropped10AfterDrink(){
+        waterBottle.drink();
+        assertEquals(90, waterBottle.getVolume());
     }
 
     @Test
     public void setToEmpty(){
         assertEquals(0, waterBottle.setEmpty());
     }
+
+    @Test
+    public void setFull(){}
 
 }
