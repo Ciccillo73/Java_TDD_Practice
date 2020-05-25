@@ -53,13 +53,4 @@ public class TestPrinter {
     }
 
 
-
 }
-
-
-//
-//       The print method will only run if the printer has enough paper:
-//        If it runs it will reduce the value of the paper left
-//        by number of copies * number of pages.
-//
-//
