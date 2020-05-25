@@ -26,4 +26,9 @@ public class TestCalculator {
         assertEquals(15, calculator.mul(3, 5));
     }
 
+    @Test
+    public void div(){
+        assertEquals(3.75, calculator.div(15, 4), 0.01);
+    }
+
 }
