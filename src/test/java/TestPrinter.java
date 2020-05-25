@@ -8,7 +8,7 @@ public class TestPrinter {
 
     @Before
     public void before(){
-        printer = new Printer(100, 4);
+        printer = new Printer(100, 100);
     }
 
     @Test
@@ -18,19 +18,26 @@ public class TestPrinter {
 
     @Test
     public void  hasToner(){
-        assertEquals(4, printer.getToner());
+        assertEquals(100, printer.getToner());
     }
 
     @Test
     public void setSheets(){
-        printer.setSheets(9);
-        assertEquals(9, printer.getSheets());
+        printer.setSheets(109);
+        assertEquals(109, printer.getSheets());
     }
 
     @Test
     public void setToner(){
-        printer.setToner(7);
-        assertEquals(7, printer.getToner());
+        printer.setToner(107);
+        assertEquals(107, printer.getToner());
+    }
+
+    @Test
+    public void ifIPrintThePaperAndTonerGoesDown(){
+        printer.print(10, 5);
+        assertEquals(50, printer.getSheets());
+        assertEquals(50, printer.getToner());
     }
 }
 
