@@ -11,6 +11,10 @@ public class Printer {
         return this.sheetsLeft;
     }
 
+    public int getToner(){
+        return this.toner;
+    }
+
 
 
 }
