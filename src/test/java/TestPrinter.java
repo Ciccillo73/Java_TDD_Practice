@@ -20,4 +20,10 @@ public class TestPrinter {
     public void  hasToner(){
         assertEquals(4, printer.getToner());
     }
+
+    @Test
+    public void setSheetsLeft(){
+        printer.setSheetsLeft(9);
+        assertEquals(9, printer.getToner());
+    }
 }

@@ -15,6 +15,10 @@ public class Printer {
         return this.toner;
     }
 
+    public void setSheetsLeft(int newToner){
+        this.toner = newToner;
+    }
+
 
 
 }
