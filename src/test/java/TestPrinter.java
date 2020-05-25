@@ -46,6 +46,14 @@ public class TestPrinter {
         assertEquals(true, printer.ifEnoughPaper(30));
     }
 
+    @Test
+
+    public void thereIsNotEnoughPaper(){
+        assertEquals(false, printer.ifEnoughPaper(200));
+    }
+
+
+
 }
 
 
